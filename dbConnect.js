@@ -21,6 +21,5 @@ module.exports.connect = async () => {
     console.log('mongodb connected ..');
   } catch (e) {
     console.log(`Database connection error: ${e}`);
-    process.exit(1);
   }
 };
