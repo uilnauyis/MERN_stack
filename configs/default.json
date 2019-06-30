@@ -1,0 +1,3 @@
+{
+  "connectionString": "mongodb+srv://siyuan:<password>@cluster1-graqe.mongodb.net/test?retryWrites=true&w=majority"
+}
