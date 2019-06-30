@@ -8,6 +8,9 @@
     "start": "node index.js",
     "debug": "nodemon index.js"
   },
+  "engines": {
+    "node": "10.x"
+  },
   "author": "",
   "license": "MIT",
   "dependencies": {
