@@ -1,4 +1,7 @@
-const connectionConfig = require('./configs/default.json');
+const connectionConfig =
+  process.env.NODE_ENV === 'development'
+    ? require('./configs/dev.json')
+    : require('./configs/prod.json');
 const mongoose = require('mongoose');
 
 module.exports.connect = async () => {

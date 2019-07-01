@@ -7,9 +7,12 @@
     {
       "type": "node",
       "request": "launch",
-      "runtimeExecutable": "/home/siyuan/.nvm/versions/node/v10.16.0/lib/node_modules/npm",
-      "name": "debug app",
-      "runtimeArgs": ["start"]
+      "runtimeExecutable": "/home/siyuan/.nvm/versions/node/v10.16.0/bin/node",
+      "name": "Launch Program",
+      "program": "${workspaceFolder}/index.js",
+      "env": {
+        "NODE_ENV": "development"
+      }
     }
   ]
 }
