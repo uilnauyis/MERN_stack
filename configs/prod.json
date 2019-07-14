@@ -1,3 +1,4 @@
 {
-  "connectionString": "mongodb+srv://siyuan:<password>@cluster1-graqe.mongodb.net/test?retryWrites=true&w=majority"
+  "connectionString": "mongodb+srv://siyuan:2oo8062E0323@cluster1-graqe.mongodb.net/test?retryWrites=true&w=majority",
+  "secret": "MERN_stack"
 }

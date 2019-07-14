@@ -1,13 +1,17 @@
 require('dotenv').config();
+
 const express = require('express');
 const dbConnect = require('./dbConnect');
+const process = require('process');
 const app = express();
 
 dbConnect.connect();
 
 app.use(express.json({ extended: false }));
 
-app.get('/', (req, res) => res.send('API testing'));
+app.get('/', (req, res) => {
+  res.send(`API testing ${process.pid}`);
+});
 app.use('/api/users', require('./routes/api/users'));
 app.use('/api/profile', require('./routes/api/profile'));
 app.use('/api/posts', require('./routes/api/posts'));

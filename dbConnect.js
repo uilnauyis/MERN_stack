@@ -1,15 +1,8 @@
-const connectionConfig =
-  process.env.NODE_ENV === 'development'
-    ? require('./configs/dev.json')
-    : require('./configs/prod.json');
 const mongoose = require('mongoose');
 
 module.exports.connect = async () => {
   try {
-    const connectionStr = connectionConfig.connectionString.replace(
-      '<password>',
-      process.env.DB_PASSWORD
-    );
+    const connectionStr = process.env.CONNECTION_STRING;
     await mongoose.connect(connectionStr, {
       useNewUrlParser: true
     });
