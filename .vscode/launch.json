@@ -9,7 +9,7 @@
       "request": "launch",
       "runtimeExecutable": "/home/siyuan/.nvm/versions/node/v10.16.0/bin/node",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/index.js",
+      "program": "${workspaceFolder}/index.dev.js",
       "env": {
         "NODE_ENV": "development"
       }
